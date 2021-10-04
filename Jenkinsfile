@@ -1,9 +1,9 @@
 pipeline {
   agent any 
   stages{
-    stage("One") {
+    stage("Checkout") {
       step{
-            echo "Hello"
+            git 'https://github.com/namsey/multiBranch.git'
           }
   }
   stage("for dev branch"){
